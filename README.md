@@ -5,6 +5,8 @@ About DE-CHAIN
 De-Chain provide secure, transparent, and efficient tracking of products, 
 which helps to prevent fraud and supply chain  disruption, leading to 
 better quality products, reduced costs, and increased trust.
+Video link:
+https://youtu.be/o8wEjCGtfHU
 
 Developed features:
 1. Smart Contract based product tracking system 
