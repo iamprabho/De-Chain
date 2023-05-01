@@ -1,5 +1,7 @@
-DE-CHAIN
-CURRENT WORKING SITE : https://de-chaining.vercel.app/
+DE-CHAIN<br>
+
+CURRENT WORKING SITE : https://de-chaining.vercel.app/ <br>
+
 A decentralized supply chain and tracking tool to provide a secure, transparent, and efficient way of tracking products  from manufacturer to end consumer, leveraging  blockchain technology to ensure data integrity, immutability, and traceability, while also providing real-time visibility and accountability for all stakeholders involved.
 About DE-CHAIN
 De-Chain provide secure, transparent, and efficient tracking of products, 
