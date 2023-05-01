@@ -13,6 +13,11 @@ Developed features:
 4. Track of all activities of product from manufacturor to consumer 
 5. Can create, delete and get shipment details easily.
 
+Smart Contract Deployment link
+https://sepolia.etherscan.io/tx/0x6cba382f9754a5ca73aea45dfabd3c4e7ab17fe5703e015ff7cdc5fb4d6af4d9
+Presentation Link:
+https://pitch.com/public/1d906967-2926-404e-8a9f-3ffa668383a1
+
 Proposed Features
 1. Optimal development of DE-CHAIN (web,android,ios)
 2. Scaling by introducing flexibility and cross layers shipping transactions.
@@ -27,5 +32,4 @@ Proposed Features
 ![Screenshot (322)](https://user-images.githubusercontent.com/91321244/235387331-f49e8a17-3bf5-445a-badb-aa4d6244808a.png)
 
 
-Presentation Link:
-https://pitch.com/public/1d906967-2926-404e-8a9f-3ffa668383a1
+
