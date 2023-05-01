@@ -21,3 +21,7 @@ Proposed Features
 5. Developing new integrated window for contract logs to enable view  of transactions, history and status.
 
 
+![Screenshot (314)](https://user-images.githubusercontent.com/91321244/235387278-bfa26b90-16a3-4cd0-ad88-f348c4fec89d.png)
+![Screenshot (320)](https://user-images.githubusercontent.com/91321244/235387302-f7374bd6-f554-4b3a-ba9a-8a7f9755ba70.png)
+![Screenshot (325)](https://user-images.githubusercontent.com/91321244/235387311-7d835ef9-60e7-484d-9983-7a089c439f98.png)
+![Screenshot (322)](https://user-images.githubusercontent.com/91321244/235387331-f49e8a17-3bf5-445a-badb-aa4d6244808a.png)
