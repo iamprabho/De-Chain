@@ -26,11 +26,13 @@ export default () => {
           <div className="space-y-6">
             <img src="https://www.floatui.com/logo.svg" className="w-32" />
 
-            <p className="max-w-md">More functional features are under development.</p>
+            <p className="max-w-md">
+              More functional features are under development.
+            </p>
             <ul className="flex flex-wrap items-center gap-4 text-sm sm:text-base">
               {footerNavs.map((item, idx) => (
                 <li className="text-gray-800 hover:text-gray-500 duration-150">
-                  <a key={idx} href={item.href}>
+                  <a key={item.href} href={item.href}>
                     {item.name}
                   </a>
                 </li>

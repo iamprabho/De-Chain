@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 
 import { TrackingContext } from "../Conetxt/TrackingContext";
 import { Nav1, Nav2, Nav3 } from "../Components/index";
@@ -13,13 +13,23 @@ export default () => {
     { title: "Erc20", path: "#" },
   ];
 
-  useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!target.closest(".menu-btn")) setState(false);
-    };
-  }, []);
+  const menuBtnRef = useRef(null);
 
+  useEffect(() => {
+    const handleClick = (e) => {
+      const target = e.target;
+      if (!menuBtnRef.current.contains(target)) setState(false);
+    };
+
+    if (menuBtnRef.current) {
+      const parentElement = menuBtnRef.current.parentElement;
+      parentElement.addEventListener("click", handleClick);
+
+      return () => {
+        parentElement.removeEventListener("click", handleClick);
+      };
+    }
+  }, []);
   return (
     <nav
       className={`bg-white pb-5 md:text-sm ${
@@ -47,11 +57,15 @@ export default () => {
             </button>
           </div>
         </div>
-        <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? "block" : "hidden"} `}>
+        <div
+          className={`flex-1 items-center mt-8 md:mt-0 md:flex ${
+            state ? "block" : "hidden"
+          } `}
+        >
           <ul className="justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
-                <li key={idx} className="text-gray-700 hover:text-gray-900">
+                <li key={item.path} className="text-gray-700 hover:text-gray-900">
                   <a href={item.path} className="block">
                     {item.title}
                   </a>

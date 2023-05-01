@@ -16,10 +16,12 @@ export default ({ setCreateShipmentModel, allShipmentsdata }) => {
     <div className="max-w-screen-xl mx-auto px-4 md:px-8">
       <div className="items-start justify-between md:flex">
         <div className="max-w-lg">
-          <h3 className="text-gray-800 text-xl font-bold sm:text-2xl">Create Tracking</h3>
+          <h3 className="text-gray-800 text-xl font-bold sm:text-2xl">
+            Create Tracking
+          </h3>
           <p className="text-gray-600 mt-2">
-            The data will be displayed here on once transaction is successful.It will be developed
-            in later stages.
+            The data will be displayed here on once transaction is successful.It
+            will be developed in later stages.
           </p>
         </div>
         <div className="mt-3 md:mt-0">
@@ -48,13 +50,25 @@ export default ({ setCreateShipmentModel, allShipmentsdata }) => {
           </thead>
           <tbody className="text-gray-600 divide-y">
             {allShipmentsdata?.map((shipment, idx) => (
-              <tr key={idx}>
-                <td className="px-6 py-4 whitespace-nowrap">{shipment.sender.slice(0, 15)}...</td>
-                <td className="px-6 py-4 whitespace-nowrap">{shipment.receiver.slice(0, 15)}...</td>
-                <td className="px-6 py-4 whitespace-nowrap">{converTime(shipment.pickupTime)}</td>
-                <td className="px-6 py-4 whitespace-nowrap">{shipment.distance} Km</td>
-                <td className="px-6 py-4 whitespace-nowrap">{shipment.price}</td>
-                <td className="px-6 py-4 whitespace-nowrap">{shipment.deliveryTime}</td>
+              <tr key={shipment.price}>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {shipment.sender.slice(0, 15)}...
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {shipment.receiver.slice(0, 15)}...
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {converTime(shipment.pickupTime)}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {shipment.distance} Km
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {shipment.price}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {shipment.deliveryTime}
+                </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   {shipment.isPaid ? " Completed" : "Not Complete"}
                 </td>
